@@ -2,12 +2,14 @@ import React from 'react'
 import "./topbar.css"
 import { NotificationsNone, Language, Settings } from '@material-ui/icons'
 
+
 export default function Topbar() {
+    const {REACT_APP_PROFILE_AVATAR}=process.env;
     return (
         <div className="topbar">
             <div className="topbarWrapper">
                 <div className="topLeft">
-                    <span className="logo">Iamadmin</span>
+                    <span className="logo">Admin Dashboard</span>
                 </div>
                 <div className="topRight">
                     <div className="topbarIconContainer">
@@ -21,7 +23,7 @@ export default function Topbar() {
                     <div className="topbarIconContainer">
                         <Settings />
                     </div>
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" className="topAvatar"></img>
+                    <img src={REACT_APP_PROFILE_AVATAR} alt="profileAvatar" className="topAvatar"></img>
                 </div>
             </div>
         </div>
