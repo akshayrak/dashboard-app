@@ -1,4 +1,6 @@
-const data = [
+const {REACT_APP_PROFILE_AVATAR}=process.env;
+
+export const data = [
     {
       name: 'Page A',
       uv: 4000,
@@ -42,5 +44,11 @@ const data = [
       amt: 2100,
     },
   ];
-
-  export default data;
+  
+export  const rows = [
+    { id: 1, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+    { id: 2, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+    { id: 3, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+    { id: 4, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+    { id: 5, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+  ];

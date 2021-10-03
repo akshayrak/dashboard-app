@@ -19,9 +19,10 @@
     border: none;
     border-radius:20%;
     padding: 5px 10px;
-    margin-right: 10px;
+    margin: 20px;
     background-color: #3bb077;
     cursor: pointer;
+    color: white;
 }
 
 .userListDelete{

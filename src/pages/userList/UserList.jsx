@@ -1,11 +1,13 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./userList.css"
 import { DataGrid } from '@material-ui/data-grid';
+import { rows } from '../../db';
 import { DeleteOutlined } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
-export default function UserList() {
-    const {REACT_APP_PROFILE_AVATAR}=process.env;
+export default function UserList() { 
 
+    const [data,setData]=useState(rows)
     const columns = [
         { field: 'id', headerName: 'ID', width: 70 },
         { field: 'user', headerName: 'User', width: 200, renderCell:(params)=>{
@@ -34,25 +36,18 @@ export default function UserList() {
             renderCell:params=>{
                 return(
                     <>
-                        <button className="userListEdit">Edit</button>
-                        <DeleteOutlined className="userListDelete" />
+                        <Link to={"/user/"+params.row.id}>
+                            <button className="userListEdit">Edit</button>
+                        </Link>
+                        <DeleteOutlined onClick={()=>{setData(data.filter(item=>item.id!==params.row.id))}} className="userListDelete" />
                     </>
                 )
             }
           },
       ];
-      
-      const rows = [
-        { id: 1, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-        { id: 2, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-        { id: 3, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-        { id: 4, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-        { id: 5, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-      ];
-      
     return (
         <div className="userList">
-            <DataGrid disableSelectionOnClick rows={rows} columns={columns} pageSize={5} checkboxSelection />
+            <DataGrid disableSelectionOnClick rows={data} columns={columns} pageSize={5} checkboxSelection />
         </div>
     )
 }
