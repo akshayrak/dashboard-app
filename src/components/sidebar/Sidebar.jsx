@@ -1,6 +1,7 @@
 import React from 'react'
 import "./sidebar.css"
 import { LineStyle, Timeline, TrendingUp, PersonOutlineOutlined, StorefrontOutlined, AttachMoneyOutlined, BarChartOutlined, MailOutlineOutlined, DynamicFeedOutlined, ChatBubbleOutline, WorkOutline, Report } from '@material-ui/icons'
+import { Link } from 'react-router-dom'
 
 export default function Sidebar() {
     return (
@@ -9,10 +10,12 @@ export default function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidbarTitle">Dashboard</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <LineStyle className="sidebarIcon" />
-                            Home
-                        </li>
+                        <Link to="/" className="link" >
+                            <li className="sidebarListItem">
+                                <LineStyle className="sidebarIcon" />
+                                Home
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
                             <Timeline className="sidebarIcon" />
                             Analytics
@@ -27,10 +30,12 @@ export default function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidbarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <PersonOutlineOutlined className="sidebarIcon" />
-                            Users
-                        </li>
+                        <Link to="/users" className="link">
+                            <li className="sidebarListItem">
+                                <PersonOutlineOutlined className="sidebarIcon" />
+                                Users
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
                             <StorefrontOutlined className="sidebarIcon" />
                             Products
