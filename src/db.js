@@ -52,3 +52,11 @@ export  const rows = [
     { id: 4, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
     { id: 5, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
   ];
+
+  export  const productRows = [
+    { id: 1, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+    { id: 2, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+    { id: 3, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+    { id: 4, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+    { id: 5, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+  ];
