@@ -45,18 +45,33 @@ export const data = [
     },
   ];
   
+  export const productData = [
+    {
+      name: 'Jan',
+      "Sales":200,
+    },
+    {
+      name: 'Feb',
+      "Sales": 600,
+    },
+    {
+      name: 'Mar',
+      "Sales": 1800,
+    },
+  ];
+  
 export  const rows = [
-    { id: 1, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-    { id: 2, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-    { id: 3, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-    { id: 4, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-    { id: 5, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+    { id: 1, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active", transaction:"$120.00"},
+    { id: 2, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active", transaction:"$120.00"},
+    { id: 3, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active", transaction:"$120.00"},
+    { id: 4, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active", transaction:"$120.00"},
+    { id: 5, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active", transaction:"$120.00"},
   ];
 
   export  const productRows = [
-    { id: 1, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-    { id: 2, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-    { id: 3, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-    { id: 4, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
-    { id: 5, username: 'Jon Snow',  avatar:REACT_APP_PROFILE_AVATAR, email:"jon@snow.com", status:"active",transaction:"$120.00"},
+    { id: 2, name: 'Apple Airpods',  img:REACT_APP_PROFILE_AVATAR, stock:123, status:"active", price:"$120.00"},
+    { id: 3, name: 'Apple Airpods',  img:REACT_APP_PROFILE_AVATAR, stock:123, status:"active", price:"$120.00"},
+    { id: 4, name: 'Apple Airpods',  img:REACT_APP_PROFILE_AVATAR, stock:123, status:"active", price:"$120.00"},
+    { id: 5, name: 'Apple Airpods',  img:REACT_APP_PROFILE_AVATAR, stock:123, status:"active", price:"$120.00"},
+    { id: 1, name: 'Apple Airpods',  img:REACT_APP_PROFILE_AVATAR, stock:123, status:"active", price:"$120.00"},
   ];
